@@ -13,6 +13,7 @@ Ukraine Russia War
 Using knowledge obtained in Monash Fintech Bootcamp the group will read, clean, and analyse the world GDP dataset extracted from the world bank. 
 
 The kind of questions you'll be asking of that data.
+
 -What are the GDP trends in relation to man-made disasters? (GFC, 9/11)
 
 -What are the GDP trends in relation to natural disasters? (COVID-19)
