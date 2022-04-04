@@ -14,6 +14,16 @@ Using knowledge obtained in Monash Fintech Bootcamp the group will read, clean, 
 
 The kind of questions you'll be asking of that data.
 -What are the GDP trends in relation to man-made disasters? (GFC, 9/11)
+
 -What are the GDP trends in relation to natural disasters? (COVID-19)
+
 -What are the potential long-term effects of war from the analysis of previous war data? (Ukraine Russia War)
+
 -What are the current short-term effects of war? (Ukraine Russia War)
+
+Possible Sources of Data?
+https://data.worldbank.org/indicator/Ny.Gdp.Mktp.Cd
+
+Other indicators other than GDP, sp500, world population/birthrate/mortality rate, employment rate
+
+Dataframe per an event
