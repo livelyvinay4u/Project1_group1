@@ -58,5 +58,3 @@ Throughout the remainder of the COVID period oil remained more volatile than Gol
 In previous events gold is considered a "safe haven" when stock prices begin to decrease. In relation to COVID-19 gold has continued to play its role as a hedge against uncertainty, rising around 28% from January 1 to August 14, 2020 reaching a maximum price of $2051.50 USD. Although the price of gold plunged below $1500, when the most acute part of the global stock market plunge occured and investors began to panic, the drop of gold was relatively mild compared to the S&P 500 Index and Oil prices. The rapid spread of coronavirus and implementation of economic lockdowns pushed gold prices to above $2000.
 
 ### **S&P 500 Index**
-
-
