@@ -34,8 +34,14 @@ yFinance is an open-source tool that uses Yahoo Finance's publicly avaliable API
 
 
 ## COVID
-![Cumulative Return](../Images/cumulative_return_covid.png?raw=true)
 
+See below the cumulative return of Gold, Oil and the S&P 500 Index during the COVID-19 pandemic.
+![Cumulative Return](Images/cumulative_return_covid.png)
+
+
+
+
+![Volatility](Images/volatility_covid.png)
 
 
 
