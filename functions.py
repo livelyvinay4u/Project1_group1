@@ -126,23 +126,23 @@ event_short = pd.concat(
 ################# Abdul's Code
 
 ################# Andrew's Code COVID
-# Correlation variable COVID
-covid_corr = event_covid.corr()
 
-# % Change variables
-covid_pct_change = event_covid.pct_change()
-# Drop NaN values
-covid_pct_change.dropna()
+
+
 
 # calc cum daily returns
-cum_covid_return = (1+ covid_pct_change).cumprod()
-
-cum_df = cum_covid_return.copy()
-cum_df1 = cum_df.reset_index()
-cum_df1.columns=['Date','Gold',"S&P 500","Oil"]
 
 # Interactive Chart with date slider at the bottom - cum returns
 def cum_returns():
+    # % Change variables
+    # Drop NaN values
+    covid_pct_change = event_covid.pct_change()
+    covid_pct_change.dropna()
+
+    cum_covid_return = (1+ covid_pct_change).cumprod()
+    cum_df = cum_covid_return.copy()
+    cum_df1 = cum_df.reset_index()
+    cum_df1.columns=['Date','Gold',"S&P 500","Oil"]
     fig = px.line(cum_df1, x='Date', y=cum_df1.columns[1:4], title='Cumulative Return of Gold, Oil and S&P500 Index During COVID')
     fig.update_xaxes(
         rangeslider_visible=True,
@@ -158,27 +158,35 @@ def cum_returns():
     )
     return fig
 
-# Volatility
-# Define the minumum of periods
-min_periods = 5
 
-# Volatility calc
-vol = covid_pct_change.rolling(min_periods).std() * np.sqrt(min_periods) 
 
 # vol chart
 def vol_plt():
-    vol = vol.hvplot(
+    # % Change variables
+    # Drop NaN values
+    covid_pct_change = event_covid.pct_change()
+    covid_pct_change.dropna()
+    # Define the minumum of periods
+    min_periods = 5
+    # Volatility calc
+    vol = covid_pct_change.rolling(min_periods).std() * np.sqrt(min_periods) 
+    vol_covid = vol.hvplot(
         figsize=(20, 10), 
-        title = "Volatility of Gold, Oil and the S&P 500 Index during COVID")
-    return vol
+        title = "Volatility of Gold, Oil and the S&P 500 Index during COVID"
+        )
+    return vol_covid
 
 # scatter matrix
 def scatter_matrix():
-    pd.plotting.scatter_matrix(
+    # % Change variables
+    # Drop NaN values
+    covid_pct_change = event_covid.pct_change().dropna()
+    scatter_matrix_covid = pd.plotting.scatter_matrix(
         covid_pct_change, 
         diagonal='kde', 
         alpha=1,figsize=(15,15)
         )
+    return scatter_matrix_covid
 
 ################# Alex's Code 
 
