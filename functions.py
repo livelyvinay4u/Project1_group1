@@ -142,7 +142,7 @@ def cum_returns():
     cum_covid_return = (1+ covid_pct_change).cumprod()
     cum_df = cum_covid_return.copy()
     cum_df1 = cum_df.reset_index()
-    cum_df1.columns=['Date','Gold',"S&P 500","Oil"]
+    cum_df1.columns=['Date','Gold',"Oil","S&P 500"]
     fig = px.line(cum_df1, x='Date', y=cum_df1.columns[1:4], title='Cumulative Return of Gold, Oil and S&P500 Index During COVID')
     fig.update_xaxes(
         rangeslider_visible=True,
