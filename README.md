@@ -41,7 +41,7 @@ See below the cumulative return of Gold, Oil and the S&P 500 Index during the CO
 
 
 
-![Volatility](Images/volatility_covid.png)
+![Volatility](Images/covid_volatility.png)
 
 
 
