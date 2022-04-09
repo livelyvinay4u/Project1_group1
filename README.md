@@ -41,7 +41,9 @@ Cumulative Return             |  Volatility
 ![Cumulative Return](Images/cumulative_return_covid.png)   |  ![Volatility](Images/covid_volatility.png)
 
 According to the World Health Organisation (WHO), the initial case of COVID-19 was reported in Wuhan, China, December, 2019. 
-The above graphs displays the cumulative return and volatility during the COVID-19 pandemic period and assists in understanding the impact COVID-19 had on Gold, Oil and the S&P 500 Index.
+The above graphs displays the cumulative return and volatility during the COVID-19 pandemic period and assists in understanding the impact COVID-19 had on Gold, Oil and the S&P 500 Index. 
+
+The Volatility chart measures the change in variance in the returns from Jan 2019 to Date. The volatility is calculated by taking a rolling window standard deviation on the % change.
 
 ### **Oil**
 The above volatility graph tells us that Oil violitility (Red) and price movements (Red) have been very significant in 2020, especially around the Covid-19 timeline. 
@@ -53,11 +55,8 @@ Throughout the remainder of the COVID period oil remained more volatile than Gol
 
 ### **Gold**
 
-In previous events gold is considered a "safe haven" when stock prices begin to decrease. In relation to COVID-19 gold has continued to play its role as a hedge against uncertainty, rising around 28% from January 1 to August 14, 2020 reaching a maximum price of $2051.50 USD. Although the price of gold plunged below $1500, when the most acute part of the global stock market plunge occured and investors began to panic, the drop of gold was relatively mild
+In previous events gold is considered a "safe haven" when stock prices begin to decrease. In relation to COVID-19 gold has continued to play its role as a hedge against uncertainty, rising around 28% from January 1 to August 14, 2020 reaching a maximum price of $2051.50 USD. Although the price of gold plunged below $1500, when the most acute part of the global stock market plunge occured and investors began to panic, the drop of gold was relatively mild compared to the S&P 500 Index and Oil prices. The rapid spread of coronavirus and implementation of economic lockdowns pushed gold prices to above $2000.
 
+### **S&P 500 Index**
 
-
-The above plot measures the change in variance in the returns over a specific period of time. The volatility is calculated by taking a rolling window standard deviation on the % change.
-
-We note from this plot that the volatility of Oil price has increased significantly over the COVID-19 period compared to Gold and the S&P 500 Index.
 
