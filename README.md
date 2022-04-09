@@ -1,30 +1,36 @@
-# Project1_group1
-Repo for the project 1
-Effects of world events on Gross Domestic Product
+# World Events Effect on Gold, Oil and the S&P 500 Index
 
-The aim of this project is to undertake a quantitative analysis of Gross Domestic Product (GDP) trends from previous years and how major world events affect GDP in the short and long term.
 
-Specified Major World Events:
-GFC2
-COVID-19
-9/11 
-Ukraine Russia War
+## Proposal
+The aim of this project is to undertake a quantitative analysis of Gold, Oil and the S&P 500 Index trends from previous years and determine how they are affected by world events.
 
-Using knowledge obtained in Monash Fintech Bootcamp the group will read, clean, and analyse the world GDP dataset extracted from the world bank. 
+Specifically, we will be looking at the following:
+* 911
+* GCF
+* COVID-19
+* Ukraine Russia War
 
-The kind of questions you'll be asking of that data.
+Using the knowledge obtained in Monash Fintech Bootcamp the group, Andrew, Alex, Vinay, Abdul and Jack, will read, clean, and analyse Gold, Oil and the S&P 500 Index data during these periods.
 
--What are the GDP trends in relation to man-made disasters? (GFC, 9/11)
+### Questions
+* What are the trends of Gold, Oil and the S&P 500 Index in relation to man-made disasters? (GFC, 911)
+* What are the trends of Gold, Oil and the S&P 500 Index in relation to natural disasters? (GFC, 911)
+* What are the potential long-term effects of war from the analysis of previous war data? (Afganistan, Iraq Wars)
+* What are the current short-term effects of war? (Ukraine Russia War)
 
--What are the GDP trends in relation to natural disasters? (COVID-19)
+### Sources of Data
 
--What are the potential long-term effects of war from the analysis of previous war data? (Ukraine Russia War)
+For this analysis our group sourced data from the yFinance python library.
+yFinance is an open-source tool that uses Yahoo Finance's publicly avaliable API to provide financial data.
 
--What are the current short-term effects of war? (Ukraine Russia War)
+* [Gold, Oil and the S&P 500 Index Data](https://pypi.org/project/yfinance/)
 
-Possible Sources of Data?
-https://data.worldbank.org/indicator/Ny.Gdp.Mktp.Cd
 
-Other indicators other than GDP, sp500, world population/birthrate/mortality rate, employment rate
+# Analysis
+## 911
 
-Dataframe per an event
+
+## GFC
+
+
+## COVID
