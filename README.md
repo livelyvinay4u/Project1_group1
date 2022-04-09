@@ -34,3 +34,8 @@ yFinance is an open-source tool that uses Yahoo Finance's publicly avaliable API
 
 
 ## COVID
+![Cumulative Return](../Images/cumulative_return_covid.png?raw=true)
+
+
+
+
