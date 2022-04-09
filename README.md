@@ -14,7 +14,7 @@ Using the knowledge obtained in Monash Fintech Bootcamp the group, Andrew, Alex,
 
 ### Questions
 * What are the trends of Gold, Oil and the S&P 500 Index in relation to man-made disasters? (GFC, 911)
-* What are the trends of Gold, Oil and the S&P 500 Index in relation to natural disasters? (GFC, 911)
+* What are the trends of Gold, Oil and the S&P 500 Index in relation to natural disasters? (COVID-19)
 * What are the potential long-term effects of war from the analysis of previous war data? (Afganistan, Iraq Wars)
 * What are the current short-term effects of war? (Ukraine Russia War)
 
@@ -57,4 +57,9 @@ Throughout the remainder of the COVID period oil remained more volatile than Gol
 
 In previous events gold is considered a "safe haven" when stock prices begin to decrease. In relation to COVID-19 gold has continued to play its role as a hedge against uncertainty, rising around 28% from January 1 to August 14, 2020 reaching a maximum price of $2051.50 USD. Although the price of gold plunged below $1500, when the most acute part of the global stock market plunge occured and investors began to panic, the drop of gold was relatively mild compared to the S&P 500 Index and Oil prices. The rapid spread of coronavirus and implementation of economic lockdowns pushed gold prices to above $2000.
 
+The volatily of Gold prices depicted by the volatility chart above are very minimal as the price of gold has been relatively stable throughout the COVID-19 pandemic.
+
 ### **S&P 500 Index**
+The first half of 2020 saw a dramatic stock market crash as a result of COVID-19. Many countries imposed stricked lockdowns to contan the further spread of the virus and halted all major economic operations, ultimately leading to a negative impact to stock markets. By 20 March, 2020, the S&P 500 Index had fallen a total of 30% from its peak.
+
+Although the market crash was dramatic, it didn't last. The stock marker experienced a surprising recovery, even as many areas of economies globally continued to experience trouble. This turn in tide occured around mid April as Governments began responding with record stimulus packages. By September 2020 the S&P500 index had recovered to its peak of $3,380 and continued to rise, reaching a record high of $4766 at the end of 2021. This potrays investors restoration of confidencen in the stock market and the recovery of economies worldwide. 
