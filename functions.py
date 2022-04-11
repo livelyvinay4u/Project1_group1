@@ -120,7 +120,7 @@ event_covid = pd.concat(
 
 event_short = pd.concat(
     [gold_data_short, oil_data_short, snp_data_short], axis="columns", join="inner"
-)5
+)
 ################# Vinay's Code
 
 #subplots
@@ -570,49 +570,32 @@ def alex_plot_iraq():
 def event_911_lineplot():
     
     plt.xlabel("Years")
-
-plt.title ("Prices of Commodities during 911")
-
-
-
-
-plt.plot(oil_data.loc["2000-10-07":"2005-08-30"], label="Oil")
-plt.plot(snp_data.loc["2000-10-07":"2005-08-30"], label="S&P 500")
-plt.plot(gold_data.loc["2000-10-07":"2005-08-30"], label="Gold")
-
-
-
-plt.legend()
-plt.grid()
-
-return event_911
+    plt.title ("Prices of Commodities during 911")
+    plt.plot(oil_data.loc["2000-10-07":"2005-08-30"], label="Oil")
+    plt.plot(snp_data.loc["2000-10-07":"2005-08-30"], label="S&P 500")
+    plt.plot(gold_data.loc["2000-10-07":"2005-08-30"], label="Gold")
+    plt.legend()
+    plt.grid()
 
 #gold price
 
 def event_911_goldplot():
-
-gold_plot = gold_data_911.hvplot.line(x="Date",value_label='Closing Price',color='red',title="Gold close prices")
-gold_plot
-
-return gold_plot
+    gold_plot = gold_data_911.hvplot.line(x="Date",value_label='Closing Price',color='red',title="Gold close prices")
+    return gold_plot
 
 #oil price 
 
 def event_911_oilplot():
-    
-oil_plot = oil_data_911.hvplot.line(x="Date",value_label='Closing Price',color='yellow',title="Oil close prices")
-oil_plot
+    oil_plot = oil_data_911.hvplot.line(x="Date",value_label='Closing Price',color='yellow',title="Oil close prices")
 
-return oil_plot
+    return oil_plot
 
 #snp 500
 
 def event_911_snp500():
-    
-snp_plot = snp_data_911.hvplot.line(x="Date",value_label='Closing Price',color='green',title="SNP 500 close prices")
-snp_plot
+    snp_plot = snp_data_911.hvplot.line(x="Date",value_label='Closing Price',color='green',title="SNP 500 close prices")
 
-return snp_plot
+    return snp_plot
 
 
 
