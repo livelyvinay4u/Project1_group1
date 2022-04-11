@@ -30,8 +30,46 @@ yFinance is an open-source tool that uses Yahoo Finance's publicly avaliable API
 ## 911
 
 
-## GFC
+## Global Financial Crisis (Great Recesion)
 
+*Period of extreme stress in global financial markets (Time Period = Mid 2007 to early 2009), since World War II.*
+
+![Line Plot](Images/gfc_linepot.png)
+
+![Pair Plot](Images/pairplot.png)
+
+![Pair Plot](Images/oilvsgold.png)
+
+![Pair Plot](Images/snpvsgold.png)
+
+![Pair Plot](Images/snpvsoil.png)
+
+### S&P 500
+
+![Subplot](Images/gfc_subplot_snp.png)
+
+- S&P 500 fell 46.13% from October 2007 to March 2009 but recovered all of its losses by March 2013. The decline was the largest drop in the S&P index since World War II.
+- Much of the decline in the United States occurred in the brief period around the climax of the crisis in the fall of 2008. From its local peak of 1,300.68 on August 28, 2008, the S&P 500 fell 48 percent in a little over six months to its low on March 9, 2009.
+
+### Oil
+
+![Subplot](Images/gfc_subplot_oil.png)
+
+- The crude oil market fluctuated enormously around the financial crisis.
+- Oil prices fell from a high of $133.88 in June 2008 to a low of $39.09 in February 2009.
+- Volatility of the crude oil market increased sharply during the GFC period, whereas it remained at a similar level with a couple of volatility clusters before and after.
+- Before the GFC period, the S&P 500 and oil prices moved opposite and then together after the GFC. This implies that the volatility change of the oil market is similar to that of the overall financial markets owing to the financialization of the crude oil market. 
+
+### Gold
+
+![Subplot](Images/gfc_subplot_gold.png)
+
+- Historically the value of gold is sometimes initially pulled down at the start of a recession, however, it is realistic to expect that in most cases it will bounce back, and increase in value throughout the recession.
+- Gold is perceived as a safe-haven asset and investors buy gold as a hedging instrument (Singhal et al., 2019). Further, gold helps investors diversify their portfolios, thereby minimizing macroeconomic risk.
+- During the GFC, we only find short memory in the gold market and only on one occasion, where Dubai experienced a lagged distortion of gold prices.
+- While most of the commodity prices declined after the 2008 financial crisis, the price of gold continued to increase and never seemed to decline.
+
+**Unexpected shock on the economy can have negative spillover effects on the commodity markets: not only increasing market volatility but also worsening market efficiency and long-term market equilibrium. No long term relationships exist between gold and oil prices. Changes to gold prices by oil prices are time and event dependnt.**
 
 ## COVID
 

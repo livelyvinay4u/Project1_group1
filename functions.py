@@ -123,6 +123,91 @@ event_short = pd.concat(
 )
 ################# Vinay's Code
 
+#subplots
+def gfc_subplots():
+    
+    event_gfc_pct_change = event_gfc.pct_change().dropna()
+    event_gfc_normalized = (event_gfc_pct_change - event_gfc_pct_change.min())/(event_gfc_pct_change.max() - event_gfc_pct_change.min())
+    event_gfc_standardize = (event_gfc_normalized-event_gfc_normalized.mean())/event_gfc_normalized.std()
+ 
+    event_gfc_subplots = event_gfc_standardize.hvplot(x='Date',
+                                                     y=["Gold","Oil","S&P 500"],
+                                                     value_label='Closing Price',
+                                                     subplots=True,
+                                                     width=600,
+                                                     height=400,
+                                                     shared_axes=False).cols(2)
+    return event_gfc_subplots
+
+
+#line plot
+def gfc_lineplot():
+    event_gfc_pct_change = event_gfc.pct_change().dropna()
+    event_gfc_normalized = (event_gfc_pct_change - event_gfc_pct_change.min())/(event_gfc_pct_change.max() - event_gfc_pct_change.min())
+    event_gfc_standardize = (event_gfc_normalized-event_gfc_normalized.mean())/event_gfc_normalized.std()
+       
+    event_gfc_lineplot = event_gfc_standardize.hvplot.line(x="Date",
+                                                          y=["Gold","Oil","S&P 500"],
+                                                          value_label="Close Price",
+                                                          legend='top',
+                                                          height=500,
+                                                          width=1320)
+
+    return event_gfc_lineplot
+
+
+###Joint plots###
+#S&P 500 vs Gold
+
+def gfc_jointplot_snp_gold():
+    event_gfc_pct_change = event_gfc.pct_change().dropna()
+    event_gfc_normalized = (event_gfc_pct_change - event_gfc_pct_change.min())/(event_gfc_pct_change.max() - event_gfc_pct_change.min())
+    event_gfc_standardize = (event_gfc_normalized - event_gfc_normalized.mean())/event_gfc_normalized.std()
+    
+    snp_vs_gold = sns.jointplot(x="S&P 500",
+                                y="Gold",
+                                data=event_gfc_standardize,
+                                height = 10,
+                                kind='reg'
+                               )
+
+    return snp_vs_gold
+
+
+#S&P 500 vs Oil
+
+def gfc_jointplot_snp_oil():
+    event_gfc_pct_change = event_gfc.pct_change().dropna()
+    event_gfc_normalized = (event_gfc_pct_change - event_gfc_pct_change.min())/(event_gfc_pct_change.max() - event_gfc_pct_change.min())
+    event_gfc_standardize = (event_gfc_normalized - event_gfc_normalized.mean())/event_gfc_normalized.std()
+    
+    snp_vs_oil = sns.jointplot(x="S&P 500",
+                               y="Oil",
+                               data=event_gfc_standardize,
+                               height = 10,
+                               kind='reg'
+                              )
+
+    return snp_vs_oil
+
+
+#Gold vs Oil
+
+def gfc_jointplot_gold_oil():
+    event_gfc_pct_change = event_gfc.pct_change().dropna()
+    event_gfc_normalized = (event_gfc_pct_change - event_gfc_pct_change.min())/(event_gfc_pct_change.max() - event_gfc_pct_change.min())
+    event_gfc_standardize = (event_gfc_normalized - event_gfc_normalized.mean())/event_gfc_normalized.std()
+    
+    oil_vs_gold = sns.jointplot(x="Oil",
+                                y="Gold",
+                                data=event_gfc_standardize,
+                                height = 10,
+                                kind='reg'
+                               )
+    
+    return oil_vs_gold
+
+
 ################# Abdul's Code
 
 ################# Andrew's Code COVID
