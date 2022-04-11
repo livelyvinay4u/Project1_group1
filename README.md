@@ -36,13 +36,8 @@ yFinance is an open-source tool that uses Yahoo Finance's publicly avaliable API
 
 ![Line Plot](Images/gfc_linepot.png)
 
-![Pair Plot](Images/pairplot.png)
+![Pair Plot](Images/oilvsgold.png)|![Pair Plot](Images/snpvsgold.png)|![Pair Plot](Images/snpvsoil.png)
 
-![Pair Plot](Images/oilvsgold.png)
-
-![Pair Plot](Images/snpvsgold.png)
-
-![Pair Plot](Images/snpvsoil.png)
 
 ### S&P 500
 
