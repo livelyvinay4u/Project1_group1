@@ -126,3 +126,31 @@ The volatily of Gold prices depicted by the volatility chart above are very mini
 The first half of 2020 saw a dramatic stock market crash as a result of COVID-19. Many countries imposed stricked lockdowns to contan the further spread of the virus and halted all major economic operations, ultimately leading to a negative impact to stock markets. By 20 March, 2020, the S&P 500 Index had fallen a total of 30% from its peak.
 
 Although the market crash was dramatic, it didn't last. The stock marker experienced a surprising recovery, even as many areas of economies globally continued to experience trouble. This turn in tide occured around mid April as Governments began responding with record stimulus packages. By September 2020 the S&P500 index had recovered to its peak of $3,380 and continued to rise, reaching a record high of $4766 at the end of 2021. This potrays investors restoration of confidencen in the stock market and the recovery of economies worldwide. 
+
+## Analysing Previous Wars to predict future outcomes after the Ukraine and Russia War
+
+Monte Carlo simulations were run on the recovery periods of the Afghanistan war between 2015 to 2021 as well as the Iraq war between 2007 to 2012 to try and determine what will happen to the prices of Oil, Gold, as well as the S&P 500 a year after the Ukraine Russia war.
+
+![afghan Plot](Images/Afghan_prediction.png)
+![iraq Plot](Images/iraq_prediction.png)
+
+### **Oil**
+
+We can see that the prices of oil are predicted to increase by 15% a year after the Ukraine Russia war concludes according to the data from the recovery period of the Iraq war. However, oil prices could also fall by 40% a year after the conclusion of the war according to the data from the recovery period of the Afghanistan war. 
+
+The price of oil can be determined by many factors such as supply and demand as well as market sentiment towards the oil futures contracts.
+
+There could be many factors at play after the conclusion of the Ukraine Russia war with one example being positive expectations for the availability of oil.
+
+### **Gold**
+
+The simulations indicated that Gold value could grow from 10% to 20% a year after the Ukraine and Russia war.
+
+This figure could be correct as, for instance, high inflation rates in the US could cause people to invest in Gold as a long-term hedge against inflation. 
+
+
+### **S&P 500 Index**
+
+The S&P 500 is simulated to grow between 2% to 20% after the Ukraine Russia war according to data from the Iraq and Afghanistan wars.
+
+The S&P 500 is not a big surprise as certain industries either begin growing again or continue to grow after the war.
