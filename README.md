@@ -8,7 +8,9 @@ Specifically, we will be looking at the following:
 * 911
 * GCF
 * COVID-19
-* Ukraine Russia War
+* Ukraine/Russia War and Afghan war
+
+Used a previous war as a point of reference for the short term effects of war on variables like the S&P500, Gold and Oil
 
 Using the knowledge obtained in Monash Fintech Bootcamp the group, Andrew, Alex, Vinay, Abdul and Jack, will read, clean, and analyse Gold, Oil and the S&P 500 Index data during these periods.
 
@@ -27,8 +29,8 @@ yFinance is an open-source tool that uses Yahoo Finance's publicly avaliable API
 
 
 # Analysis
-## 911
-
+## 911 and Ukraine & Russian War
+used previous wars as a point of reference to do an analysis of what happens to world's oil price, gold and s&p 500. Try to use this analysis to understand what is happening during the Ukraine and Russia conflict. 
 
 ## GFC
 

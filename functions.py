@@ -120,11 +120,19 @@ event_covid = pd.concat(
 
 event_short = pd.concat(
     [gold_data_short, oil_data_short, snp_data_short], axis="columns", join="inner"
-)
+)5
 ################# Vinay's Code
 
 ################# Abdul's Code
-
+Ukraine_Russia_war = event_short
+Ukraine_Russia_war
+Afghan_war= event_911
+Afghan_war
+Afghan_war=Afghan_war.loc["2001-10-07":"2001-12-01"]
+Afghan_war
+Afghan_war.hvplot(x='Date', y='', title= 'Short-term effects of Afghan War', value_label='Percentage Change')
+Ukraine_Russia_war.loc["2022-02-24":"2022-04-05"]
+Ukraine_Russia_war.hvplot(x='Date', y=['Gold',"Oil","S&P 500"], title= 'Short-term effects of Ukraine/Russian War', value_label='Percentage Change')
 ################# Andrew's Code COVID
 
 
