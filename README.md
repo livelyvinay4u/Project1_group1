@@ -29,16 +29,10 @@ yFinance is an open-source tool that uses Yahoo Finance's publicly avaliable API
 
 
 # Analysis
-<<<<<<< HEAD
 ## 911 and Ukraine & Russian War
 used previous wars as a point of reference to do an analysis of what happens to world's oil price, gold and s&p 500. Try to use this analysis to understand what is happening during the Ukraine and Russia conflict. 
-=======
-## 911
 
-The attacks on 9/11 and their impacts on commodities markets
->>>>>>> 3e85923b54905e39a9435379db3e05356693694d
-
-![Line Plot](Images/allcommoditesprice_plot)
+![Line Plot](Images/allcommoditesprice_plot.png)
 
 - The terrorist attack on Sept. 11, 2001 was marked by a sharp plunge in the stock market, causing a $1.4 trillion loss in market value.
 - The first week of trading after the attacks saw the S&P 500 fall more than 14%, while gold and oil rallied.
@@ -46,20 +40,20 @@ The attacks on 9/11 and their impacts on commodities markets
 
 ### Gold 
 
-![Line Plot](Images/goldprice911_plot)
+![Line Plot](Images/goldprice911_plot.png)
 - As wall street closed for a week, investors looked for safer alternatuves in terms of investments.
 - Gold provided a safe haven initially which spike the price of gold as investors saw an opportunity
 - As visioned on the graph, Gold rose and held its position for about a month before decreasing to its previous price before the 9/11 attacks 
 
 ### Oil
 
-![Line Plot](Images/oilprice911_plot)
+![Line Plot](Images/oilprice911_plot.png)
 - A bit similar to gold, oil's price rose quite quickly and suddenly
 - This was primarly due to fear among investors as they anticipated a price increase due to the shortage they may arise from middle eastern countries
 
 ### S&P 500
 
-![Line Plot](Images/snpprice911_plot)
+![Line Plot](Images/snpprice911_plot.png)
 - As stated before, the S&P index fell more than 14% during the first week after the attacks
 - the NYSE and the Nasdaq remained closed until September 17
 - Many big financial firms were affected due to their offices being within the World trade centre
