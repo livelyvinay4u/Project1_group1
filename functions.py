@@ -216,8 +216,15 @@ Afghan_war
 Afghan_war=Afghan_war.loc["2001-10-07":"2001-12-01"]
 Afghan_war
 Afghan_war.hvplot(x='Date', y='', title= 'Short-term effects of Afghan War', value_label='Percentage Change')
-Ukraine_Russia_war.loc["2022-02-24":"2022-04-05"]
-Ukraine_Russia_war.hvplot(x='Date', y=['Gold',"Oil","S&P 500"], title= 'Short-term effects of Ukraine/Russian War', value_label='Percentage Change')
+loc = Ukraine_Russia_war.loc["2022-02-24":"2022-04-05"]
+loc.hvplot(x='Date', y=['Gold',"Oil","S&P 500"], title= 'Short-term effects of Ukraine/Russian War', value_label='Percentage Change')
+
+def ukraine_russia():
+    test = loc.hvplot(x='Date', y=['Gold',"Oil","S&P 500"], title= 'Short-term effects of Ukraine/Russian War', value_label='Percentage Change')
+    return test
+def ukraine_russia_afghan():
+    test1 = Afghan_war.hvplot(x='Date', y='', title= 'Short-term effects of Afghan War', value_label='Percentage Change')
+    return test1
 ################# Andrew's Code COVID
 
 
