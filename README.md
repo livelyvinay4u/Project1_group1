@@ -31,7 +31,7 @@ yFinance is an open-source tool that uses Yahoo Finance's publicly avaliable API
 
 The attacks on 9/11 and their impacts on commodities markets
 
-(Images/allcommoditesprice_plot)
+![Line Plot](Images/allcommoditesprice_plot)
 
 - The terrorist attack on Sept. 11, 2001 was marked by a sharp plunge in the stock market, causing a $1.4 trillion loss in market value.
 - The first week of trading after the attacks saw the S&P 500 fall more than 14%, while gold and oil rallied.
