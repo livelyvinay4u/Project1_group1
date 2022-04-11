@@ -123,6 +123,91 @@ event_short = pd.concat(
 )5
 ################# Vinay's Code
 
+#subplots
+def gfc_subplots():
+    
+    event_gfc_pct_change = event_gfc.pct_change().dropna()
+    event_gfc_normalized = (event_gfc_pct_change - event_gfc_pct_change.min())/(event_gfc_pct_change.max() - event_gfc_pct_change.min())
+    event_gfc_standardize = (event_gfc_normalized-event_gfc_normalized.mean())/event_gfc_normalized.std()
+ 
+    event_gfc_subplots = event_gfc_standardize.hvplot(x='Date',
+                                                     y=["Gold","Oil","S&P 500"],
+                                                     value_label='Closing Price',
+                                                     subplots=True,
+                                                     width=600,
+                                                     height=400,
+                                                     shared_axes=False).cols(2)
+    return event_gfc_subplots
+
+
+#line plot
+def gfc_lineplot():
+    event_gfc_pct_change = event_gfc.pct_change().dropna()
+    event_gfc_normalized = (event_gfc_pct_change - event_gfc_pct_change.min())/(event_gfc_pct_change.max() - event_gfc_pct_change.min())
+    event_gfc_standardize = (event_gfc_normalized-event_gfc_normalized.mean())/event_gfc_normalized.std()
+       
+    event_gfc_lineplot = event_gfc_standardize.hvplot.line(x="Date",
+                                                          y=["Gold","Oil","S&P 500"],
+                                                          value_label="Close Price",
+                                                          legend='top',
+                                                          height=500,
+                                                          width=1320)
+
+    return event_gfc_lineplot
+
+
+###Joint plots###
+#S&P 500 vs Gold
+
+def gfc_jointplot_snp_gold():
+    event_gfc_pct_change = event_gfc.pct_change().dropna()
+    event_gfc_normalized = (event_gfc_pct_change - event_gfc_pct_change.min())/(event_gfc_pct_change.max() - event_gfc_pct_change.min())
+    event_gfc_standardize = (event_gfc_normalized - event_gfc_normalized.mean())/event_gfc_normalized.std()
+    
+    snp_vs_gold = sns.jointplot(x="S&P 500",
+                                y="Gold",
+                                data=event_gfc_standardize,
+                                height = 10,
+                                kind='reg'
+                               )
+
+    return snp_vs_gold
+
+
+#S&P 500 vs Oil
+
+def gfc_jointplot_snp_oil():
+    event_gfc_pct_change = event_gfc.pct_change().dropna()
+    event_gfc_normalized = (event_gfc_pct_change - event_gfc_pct_change.min())/(event_gfc_pct_change.max() - event_gfc_pct_change.min())
+    event_gfc_standardize = (event_gfc_normalized - event_gfc_normalized.mean())/event_gfc_normalized.std()
+    
+    snp_vs_oil = sns.jointplot(x="S&P 500",
+                               y="Oil",
+                               data=event_gfc_standardize,
+                               height = 10,
+                               kind='reg'
+                              )
+
+    return snp_vs_oil
+
+
+#Gold vs Oil
+
+def gfc_jointplot_gold_oil():
+    event_gfc_pct_change = event_gfc.pct_change().dropna()
+    event_gfc_normalized = (event_gfc_pct_change - event_gfc_pct_change.min())/(event_gfc_pct_change.max() - event_gfc_pct_change.min())
+    event_gfc_standardize = (event_gfc_normalized - event_gfc_normalized.mean())/event_gfc_normalized.std()
+    
+    oil_vs_gold = sns.jointplot(x="Oil",
+                                y="Gold",
+                                data=event_gfc_standardize,
+                                height = 10,
+                                kind='reg'
+                               )
+    
+    return oil_vs_gold
+
+
 ################# Abdul's Code
 Ukraine_Russia_war = event_short
 Ukraine_Russia_war
@@ -146,11 +231,10 @@ def cum_returns():
     # Drop NaN values
     covid_pct_change = event_covid.pct_change()
     covid_pct_change.dropna()
-
     cum_covid_return = (1+ covid_pct_change).cumprod()
     cum_df = cum_covid_return.copy()
     cum_df1 = cum_df.reset_index()
-    cum_df1.columns=['Date','Gold',"S&P 500","Oil"]
+    cum_df1.columns=['Date','Gold','Oil','S&P 500']
     fig = px.line(cum_df1, x='Date', y=cum_df1.columns[1:4], title='Cumulative Return of Gold, Oil and S&P500 Index During COVID')
     fig.update_xaxes(
         rangeslider_visible=True,
@@ -480,3 +564,55 @@ def alex_plot_iraq():
     return plot2
 
 ################# Jack's Code
+
+#line plots
+
+def event_911_lineplot():
+    
+    plt.xlabel("Years")
+
+plt.title ("Prices of Commodities during 911")
+
+
+
+
+plt.plot(oil_data.loc["2000-10-07":"2005-08-30"], label="Oil")
+plt.plot(snp_data.loc["2000-10-07":"2005-08-30"], label="S&P 500")
+plt.plot(gold_data.loc["2000-10-07":"2005-08-30"], label="Gold")
+
+
+
+plt.legend()
+plt.grid()
+
+return event_911
+
+#gold price
+
+def event_911_goldplot():
+
+gold_plot = gold_data_911.hvplot.line(x="Date",value_label='Closing Price',color='red',title="Gold close prices")
+gold_plot
+
+return gold_plot
+
+#oil price 
+
+def event_911_oilplot():
+    
+oil_plot = oil_data_911.hvplot.line(x="Date",value_label='Closing Price',color='yellow',title="Oil close prices")
+oil_plot
+
+return oil_plot
+
+#snp 500
+
+def event_911_snp500():
+    
+snp_plot = snp_data_911.hvplot.line(x="Date",value_label='Closing Price',color='green',title="SNP 500 close prices")
+snp_plot
+
+return snp_plot
+
+
+
